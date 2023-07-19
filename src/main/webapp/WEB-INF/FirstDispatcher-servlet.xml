@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- to represent  Dispatcher servlet class (frontend controller) -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+	<!--  to enable autoScanning and Annotation 
+	<context:component-scan base-package="org.jsp.springMVC"></context:component-scan>
+
+	Configuration of DriverManagerDataSource
+	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/krk"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="12345"></property>
+	</bean>
+	
+	Configuration of JdbcTemplate
+	<bean id="jdbc" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg name="dataSource" ref="ds"></constructor-arg>
+	</bean>
+	
+	Configuration of InternalResourceViewResolver Helper Class for ViewResolver
+	To Add Suffix and Prefix for incomplete responce i.e. jsp file name, provided by FrontedController
+	<bean id="vr" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		To provide path of jsp File (webapp)
+		<property name="prefix" value="/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean> -->
+</beans>
